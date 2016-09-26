@@ -31,7 +31,7 @@ TEST(FieldTest, placeMineInBounds2)
 	minefield.placeMine(19,19);
 	ASSERT_EQ( MINE_HIDDEN, minefield.get(19,19) );
 }
-/*
+
 TEST(FieldTest, placeMineInBounds3)
 {
 	Field minefield(20);
@@ -93,4 +93,3 @@ TEST(FieldTest, isntSafe3)
 	ASSERT_FALSE( minefield.isSafe(1,5) );
 }
 
-*/
