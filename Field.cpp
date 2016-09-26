@@ -44,6 +44,8 @@
 **/
  bool Field::inBounds(int col, int row)
  {
+	 //dj This should not use FIELD_DIMENSION if overloaded constructor is used
+	 //if the grid is larger than 10x10, all checks outside of that are out of scope
  	if(row < 0 || row > FIELD_DIMENSION || col < 0 || col > FIELD_DIMENSION)
  	{
  		return false;
